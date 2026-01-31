@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Top Trending Gadgets on AliExpress</title>
+  <title>Stylish Gadgets - Top Trending Gadgets</title>
   <meta name="description" content="Discover top trending gadgets under $50. Affordable, trendy products from AliExpress.">
 
   <!-- Pinterest Tag -->
@@ -22,7 +22,6 @@
     <img height="1" width="1" style="display:none;" alt=""
     src="https://ct.pinterest.com/v3/?event=init&tid=2613554017505&noscript=1" />
   </noscript>
-  <!-- End Pinterest Tag -->
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -31,145 +30,186 @@
     body {
       font-family: 'Inter', sans-serif;
       margin: 0;
-      background: #f7f6f4;
+      background: #f2f2f2;
       color: #1c1c1c;
       line-height: 1.6;
     }
+
     header {
-      background: #FF0000;
+      background: #FF3B3B;
       color: white;
-      padding: 48px 24px;
+      padding: 50px 20px 30px 20px;
       text-align: center;
+    }
+    header img {
+      max-width: 150px;
+      margin-bottom: 15px;
     }
     header h1 {
       font-family: 'Playfair Display', serif;
-      font-size: 42px;
-      margin-bottom: 8px;
+      font-size: 44px;
+      margin: 10px 0 5px 0;
     }
     header p {
-      font-size: 16px;
-      opacity: 0.85;
+      font-size: 18px;
+      opacity: 0.9;
     }
+
     main {
-      max-width: 1200px;
+      max-width: 1300px;
       margin: 40px auto;
       padding: 0 20px;
     }
+
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 32px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
     }
+
     .card {
       background: #fff;
       border-radius: 20px;
       padding: 20px;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.08);
       text-align: center;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.08);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+      overflow: hidden;
     }
+
     .card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 30px 60px rgba(0,0,0,0.12);
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
     }
+
     .card img {
       width: 100%;
-      max-width: 200px;
+      max-width: 220px;
       border-radius: 16px;
-      margin-bottom: 16px;
+      margin-bottom: 15px;
       transition: transform 0.4s ease;
     }
+
     .card:hover img {
-      transform: scale(1.05);
+      transform: scale(1.1);
     }
+
+    .badge {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      background: #FF3B3B;
+      color: white;
+      padding: 5px 12px;
+      font-size: 12px;
+      font-weight: bold;
+      border-radius: 12px;
+      text-transform: uppercase;
+    }
+
     .card h3 {
       font-family: 'Playfair Display', serif;
-      font-size: 18px;
-      margin: 0 0 6px;
+      font-size: 20px;
+      margin: 10px 0 6px;
     }
+
     .card p {
       font-size: 14px;
-      opacity: 0.7;
+      color: #555;
+      margin-bottom: 12px;
     }
+
     .btn {
       display: inline-block;
-      margin-top: 10px;
-      padding: 12px 25px;
-      background: #FF0000;
+      margin-top: 8px;
+      padding: 12px 28px;
+      background: #FF3B3B;
       color: #fff;
       text-decoration: none;
       border-radius: 8px;
       font-weight: bold;
+      transition: background 0.3s ease, transform 0.2s ease;
     }
+
     .btn:hover {
       background: #cc0000;
+      transform: scale(1.05);
     }
+
     footer {
       background:#eee;
-      padding:16px;
+      padding:20px;
       text-align:center;
       font-size:14px;
-      margin-top: 40px;
+      margin-top: 50px;
     }
+
   </style>
 </head>
 <body>
 
 <header>
-  <h1>Top Trending Gadgets on AliExpress</h1>
-  <p>Affordable, trendy products you'll love!</p>
+  <img src="https://via.placeholder.com/150x50?text=My+Store+Logo" alt="Stylish Gadgets Logo">
+  <h1>Stylish Gadgets</h1>
+  <p>Top Trending Gadgets Under $50</p>
 </header>
 
 <main>
   <div class="grid">
     <!-- Product 1 -->
     <div class="card">
+      <span class="badge">Hot</span>
       <a href="https://s.click.aliexpress.com/e/_c3H1vDTV" target="_blank">
         <img src="//ae01.alicdn.com/kf/Sb6afe218acdf4879b4b0dbbfac80a3175.jpg_140x140.jpg" alt="Product 1">
       </a>
       <h3>Product 1</h3>
-      <p>Trendy gadget that everyone wants!</p>
-      <a class="btn" href="https://s.click.aliexpress.com/e/_c3H1vDTV" target="_blank">Buy Now on AliExpress</a>
+      <p>Trendy gadget everyone is loving.</p>
+      <a class="btn" href="https://s.click.aliexpress.com/e/_c3H1vDTV" target="_blank">Buy Now</a>
     </div>
 
     <!-- Product 2 -->
     <div class="card">
+      <span class="badge">New</span>
       <a href="https://s.click.aliexpress.com/e/_c3Yorogb" target="_blank">
         <img src="//ae01.alicdn.com/kf/S45841c77768243ba8b7cf87b82a2dd57F.jpg_140x140.jpg" alt="Product 2">
       </a>
       <h3>Product 2</h3>
-      <p>High-quality, affordable and trendy gadget.</p>
-      <a class="btn" href="https://s.click.aliexpress.com/e/_c3Yorogb" target="_blank">Buy Now on AliExpress</a>
+      <p>High-quality, affordable gadget.</p>
+      <a class="btn" href="https://s.click.aliexpress.com/e/_c3Yorogb" target="_blank">Buy Now</a>
     </div>
 
     <!-- Product 3 -->
     <div class="card">
+      <span class="badge">Popular</span>
       <a href="https://s.click.aliexpress.com/e/_c4D1OAQn" target="_blank">
         <img src="//ae01.alicdn.com/kf/Sd474a4c5f7414f32a0cdb5ae438a899eh.jpg_140x140.jpg" alt="Product 3">
       </a>
       <h3>Product 3</h3>
       <p>Must-have gadget at a great price.</p>
-      <a class="btn" href="https://s.click.aliexpress.com/e/_c4D1OAQn" target="_blank">Buy Now on AliExpress</a>
+      <a class="btn" href="https://s.click.aliexpress.com/e/_c4D1OAQn" target="_blank">Buy Now</a>
     </div>
 
     <!-- Product 4 -->
     <div class="card">
+      <span class="badge">Trending</span>
       <a href="https://s.click.aliexpress.com/e/_c3fe2h4R" target="_blank">
         <img src="//ae01.alicdn.com/kf/S2f1ad11e28a9426989f0468c015f61d14.jpg_140x140.jpg" alt="Product 4">
       </a>
       <h3>Product 4</h3>
       <p>Top-rated gadget for daily use.</p>
-      <a class="btn" href="https://s.click.aliexpress.com/e/_c3fe2h4R" target="_blank">Buy Now on AliExpress</a>
+      <a class="btn" href="https://s.click.aliexpress.com/e/_c3fe2h4R" target="_blank">Buy Now</a>
     </div>
 
     <!-- Product 5 -->
     <div class="card">
+      <span class="badge">Hot</span>
       <a href="https://s.click.aliexpress.com/e/_c39qlw6P" target="_blank">
         <img src="//ae01.alicdn.com/kf/Sa44dcca3420440b5bdf216e1df830a92t.jpg_140x140.jpg" alt="Product 5">
       </a>
       <h3>Product 5</h3>
       <p>Affordable and trendy gadget everyone loves.</p>
-      <a class="btn" href="https://s.click.aliexpress.com/e/_c39qlw6P" target="_blank">Buy Now on AliExpress</a>
+      <a class="btn" href="https://s.click.aliexpress.com/e/_c39qlw6P" target="_blank">Buy Now</a>
     </div>
   </div>
 </main>
