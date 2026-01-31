@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Stylish Gadgets - Top Trending Gadgets</title>
-  <meta name="description" content="Discover top trending gadgets under $50. Affordable, trendy products from AliExpress.">
+  <title>Stylish Gadgets - Trending Gadgets Under $50</title>
+  <meta name="description" content="Discover top trending gadgets under $50 from AliExpress. Affordable, high-quality products with fast shipping.">
 
   <!-- Pinterest Tag -->
   <script>
@@ -30,40 +30,50 @@
     body {
       font-family: 'Inter', sans-serif;
       margin: 0;
-      background: #f2f2f2;
+      background: #f9f9f9;
       color: #1c1c1c;
       line-height: 1.6;
     }
 
+    /* Header Banner */
     header {
-      background: #FF3B3B;
+      position: relative;
+      background: url('https://via.placeholder.com/1600x500.png?text=Top+Trending+Gadgets') center/cover no-repeat;
+      height: 500px;
       color: white;
-      padding: 50px 20px 30px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       text-align: center;
     }
-    header img {
+
+    header img.logo {
       max-width: 150px;
-      margin-bottom: 15px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      background: rgba(0,0,0,0.3);
+      padding: 5px 10px;
     }
+
     header h1 {
       font-family: 'Playfair Display', serif;
-      font-size: 44px;
+      font-size: 50px;
       margin: 10px 0 5px 0;
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
     }
+
     header p {
-      font-size: 18px;
-      opacity: 0.9;
+      font-size: 22px;
+      text-shadow: 1px 1px 8px rgba(0,0,0,0.5);
     }
 
     main {
       max-width: 1300px;
-      margin: 40px auto;
+      margin: -80px auto 50px auto;
       padding: 0 20px;
-    }
-
-    .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 30px;
     }
 
@@ -72,27 +82,26 @@
       border-radius: 20px;
       padding: 20px;
       text-align: center;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+      box-shadow: 0 12px 28px rgba(0,0,0,0.1);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       position: relative;
-      overflow: hidden;
     }
 
     .card:hover {
       transform: translateY(-10px);
-      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+      box-shadow: 0 25px 50px rgba(0,0,0,0.15);
     }
 
     .card img {
       width: 100%;
-      max-width: 220px;
+      max-width: 250px;
       border-radius: 16px;
       margin-bottom: 15px;
       transition: transform 0.4s ease;
     }
 
     .card:hover img {
-      transform: scale(1.1);
+      transform: scale(1.05);
     }
 
     .badge {
@@ -101,7 +110,7 @@
       left: 15px;
       background: #FF3B3B;
       color: white;
-      padding: 5px 12px;
+      padding: 6px 14px;
       font-size: 12px;
       font-weight: bold;
       border-radius: 12px;
@@ -110,19 +119,37 @@
 
     .card h3 {
       font-family: 'Playfair Display', serif;
-      font-size: 20px;
-      margin: 10px 0 6px;
+      font-size: 22px;
+      margin: 10px 0 5px;
     }
 
     .card p {
       font-size: 14px;
       color: #555;
+      margin-bottom: 6px;
+    }
+
+    .price {
+      font-size: 18px;
+      font-weight: bold;
+      color: #FF3B3B;
+      margin-bottom: 8px;
+    }
+
+    .rating {
+      color: #FFA500;
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+
+    .shipping {
+      font-size: 13px;
+      color: #888;
       margin-bottom: 12px;
     }
 
     .btn {
       display: inline-block;
-      margin-top: 8px;
       padding: 12px 28px;
       background: #FF3B3B;
       color: #fff;
@@ -145,73 +172,92 @@
       margin-top: 50px;
     }
 
+    @media(max-width: 600px){
+      header h1 { font-size: 32px; }
+      header p { font-size: 16px; }
+      main { margin-top: -50px; gap:20px; }
+    }
   </style>
 </head>
 <body>
 
 <header>
-  <img src="https://via.placeholder.com/150x50?text=My+Store+Logo" alt="Stylish Gadgets Logo">
+  <img class="logo" src="https://via.placeholder.com/150x50?text=My+Store+Logo" alt="Stylish Gadgets Logo">
   <h1>Stylish Gadgets</h1>
   <p>Top Trending Gadgets Under $50</p>
 </header>
 
 <main>
-  <div class="grid">
-    <!-- Product 1 -->
-    <div class="card">
-      <span class="badge">Hot</span>
-      <a href="https://s.click.aliexpress.com/e/_c3H1vDTV" target="_blank">
-        <img src="//ae01.alicdn.com/kf/Sb6afe218acdf4879b4b0dbbfac80a3175.jpg_140x140.jpg" alt="Product 1">
-      </a>
-      <h3>Product 1</h3>
-      <p>Trendy gadget everyone is loving.</p>
-      <a class="btn" href="https://s.click.aliexpress.com/e/_c3H1vDTV" target="_blank">Buy Now</a>
-    </div>
-
-    <!-- Product 2 -->
-    <div class="card">
-      <span class="badge">New</span>
-      <a href="https://s.click.aliexpress.com/e/_c3Yorogb" target="_blank">
-        <img src="//ae01.alicdn.com/kf/S45841c77768243ba8b7cf87b82a2dd57F.jpg_140x140.jpg" alt="Product 2">
-      </a>
-      <h3>Product 2</h3>
-      <p>High-quality, affordable gadget.</p>
-      <a class="btn" href="https://s.click.aliexpress.com/e/_c3Yorogb" target="_blank">Buy Now</a>
-    </div>
-
-    <!-- Product 3 -->
-    <div class="card">
-      <span class="badge">Popular</span>
-      <a href="https://s.click.aliexpress.com/e/_c4D1OAQn" target="_blank">
-        <img src="//ae01.alicdn.com/kf/Sd474a4c5f7414f32a0cdb5ae438a899eh.jpg_140x140.jpg" alt="Product 3">
-      </a>
-      <h3>Product 3</h3>
-      <p>Must-have gadget at a great price.</p>
-      <a class="btn" href="https://s.click.aliexpress.com/e/_c4D1OAQn" target="_blank">Buy Now</a>
-    </div>
-
-    <!-- Product 4 -->
-    <div class="card">
-      <span class="badge">Trending</span>
-      <a href="https://s.click.aliexpress.com/e/_c3fe2h4R" target="_blank">
-        <img src="//ae01.alicdn.com/kf/S2f1ad11e28a9426989f0468c015f61d14.jpg_140x140.jpg" alt="Product 4">
-      </a>
-      <h3>Product 4</h3>
-      <p>Top-rated gadget for daily use.</p>
-      <a class="btn" href="https://s.click.aliexpress.com/e/_c3fe2h4R" target="_blank">Buy Now</a>
-    </div>
-
-    <!-- Product 5 -->
-    <div class="card">
-      <span class="badge">Hot</span>
-      <a href="https://s.click.aliexpress.com/e/_c39qlw6P" target="_blank">
-        <img src="//ae01.alicdn.com/kf/Sa44dcca3420440b5bdf216e1df830a92t.jpg_140x140.jpg" alt="Product 5">
-      </a>
-      <h3>Product 5</h3>
-      <p>Affordable and trendy gadget everyone loves.</p>
-      <a class="btn" href="https://s.click.aliexpress.com/e/_c39qlw6P" target="_blank">Buy Now</a>
-    </div>
+  <!-- Smart Watch -->
+  <div class="card">
+    <span class="badge">Hot</span>
+    <a href="https://s.click.aliexpress.com/e/_c3H1vDTV" target="_blank">
+      <img src="//ae01.alicdn.com/kf/Sb6afe218acdf4879b4b0dbbfac80a3175.jpg_140x140.jpg" alt="Smart Watch">
+    </a>
+    <h3>Smart Watch Fitness Tracker</h3>
+    <p>Track your daily steps, heart rate & sleep patterns with style.</p>
+    <div class="price">$29.99</div>
+    <div class="rating">⭐⭐⭐⭐ 4.5/5</div>
+    <div class="shipping">Free Shipping</div>
+    <a class="btn" href="https://s.click.aliexpress.com/e/_c3H1vDTV" target="_blank">Buy Now</a>
   </div>
+
+  <!-- Wireless Earbuds -->
+  <div class="card">
+    <span class="badge">New</span>
+    <a href="https://s.click.aliexpress.com/e/_c3Yorogb" target="_blank">
+      <img src="//ae01.alicdn.com/kf/S45841c77768243ba8b7cf87b82a2dd57F.jpg_140x140.jpg" alt="Wireless Earbuds">
+    </a>
+    <h3>Wireless Bluetooth Earbuds</h3>
+    <p>High-quality sound, noise-cancellation, and compact charging case.</p>
+    <div class="price">$25.99</div>
+    <div class="rating">⭐⭐⭐⭐ 4.6/5</div>
+    <div class="shipping">Free Shipping</div>
+    <a class="btn" href="https://s.click.aliexpress.com/e/_c3Yorogb" target="_blank">Buy Now</a>
+  </div>
+
+  <!-- Mini Drone -->
+  <div class="card">
+    <span class="badge">Popular</span>
+    <a href="https://s.click.aliexpress.com/e/_c4D1OAQn" target="_blank">
+      <img src="//ae01.alicdn.com/kf/Sd474a4c5f7414f32a0cdb5ae438a899eh.jpg_140x140.jpg" alt="Mini Drone">
+    </a>
+    <h3>Mini Drone with Camera</h3>
+    <p>Fly high and capture stunning aerial videos with ease.</p>
+    <div class="price">$39.99</div>
+    <div class="rating">⭐⭐⭐⭐ 4.4/5</div>
+    <div class="shipping">Ships Worldwide</div>
+    <a class="btn" href="https://s.click.aliexpress.com/e/_c4D1OAQn" target="_blank">Buy Now</a>
+  </div>
+
+  <!-- Portable Projector -->
+  <div class="card">
+    <span class="badge">Trending</span>
+    <a href="https://s.click.aliexpress.com/e/_c3fe2h4R" target="_blank">
+      <img src="//ae01.alicdn.com/kf/S2f1ad11e28a9426989f0468c015f61d14.jpg_140x140.jpg" alt="Portable Projector">
+    </a>
+    <h3>Mini Portable Projector</h3>
+    <p>Watch movies anywhere with this pocket-sized projector.</p>
+    <div class="price">$49.99</div>
+    <div class="rating">⭐⭐⭐⭐ 4.5/5</div>
+    <div class="shipping">Free Shipping</div>
+    <a class="btn" href="https://s.click.aliexpress.com/e/_c3fe2h4R" target="_blank">Buy Now</a>
+  </div>
+
+  <!-- LED Desk Lamp -->
+  <div class="card">
+    <span class="badge">Hot</span>
+    <a href="https://s.click.aliexpress.com/e/_c39qlw6P" target="_blank">
+      <img src="//ae01.alicdn.com/kf/Sa44dcca3420440b5bdf216e1df830a92t.jpg_140x140.jpg" alt="LED Desk Lamp">
+    </a>
+    <h3>Adjustable LED Desk Lamp</h3>
+    <p>Modern lamp with brightness control and USB charging port.</p>
+    <div class="price">$19.99</div>
+    <div class="rating">⭐⭐⭐⭐ 4.7/5</div>
+    <div class="shipping">Ships Worldwide</div>
+    <a class="btn" href="https://s.click.aliexpress.com/e/_c39qlw6P" target="_blank">Buy Now</a>
+  </div>
+
 </main>
 
 <footer>
