@@ -1,1 +1,60 @@
 # glow-muse-bags
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stylish Bags Under $50</title>
+  <meta name="description" content="Discover stylish women's handbags under $50. Affordable, trendy bags perfect for everyday outfits." />
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background:#fafafa; color:#222; }
+    header { background:#111; color:#fff; padding:24px; text-align:center; }
+    section { padding:24px; max-width:1000px; margin:auto; }
+    .grid { display:grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap:20px; }
+    .card { background:#fff; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,.08); padding:16px; }
+    .card img { width:100%; border-radius:8px; }
+    .btn { display:inline-block; margin-top:10px; padding:10px 14px; background:#000; color:#fff; text-decoration:none; border-radius:8px; }
+    footer { background:#eee; padding:16px; text-align:center; font-size:14px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Stylish Bags Under $50</h1>
+    <p>Affordable luxury handbags for everyday style</p>
+  </header>
+
+  <section>
+    <h2>Top Picks</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://via.placeholder.com/400x400" alt="Stylish women's handbag" />
+        <h3>Trendy Everyday Handbag</h3>
+        <p>Perfect for work, travel, and casual outfits.</p>
+        <a class="btn" href="#" target="_blank">View on Store</a>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/400x400" alt="Affordable shoulder bag" />
+        <h3>Minimal Shoulder Bag</h3>
+        <p>Clean design with a luxury look under budget.</p>
+        <a class="btn" href="#" target="_blank">View on Store</a>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/400x400" alt="Crossbody bag for women" />
+        <h3>Crossbody Bag</h3>
+        <p>Lightweight and stylish for daily use.</p>
+        <a class="btn" href="#" target="_blank">View on Store</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>About</h2>
+    <p>We curate stylish and affordable women's bags to help you find trendy pieces without overspending.</p>
+  </section>
+
+  <footer>
+    <p>Affiliate Disclosure: This site may contain affiliate links. We may earn a commission at no extra cost to you.</p>
+    <p>© 2026 Stylish Bags</p>
+  </footer>
+</body>
+</html>
