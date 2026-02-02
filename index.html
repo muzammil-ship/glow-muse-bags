@@ -28,22 +28,45 @@ gtag('config', 'G-XXXXXXX');
 </script>
 
 <style>
+ :root{
+  --bg-main:#fdfaf7;
+  --bg-card:#ffffff;
+  --text-main:#1c1c1c;
+  --text-soft:#6b6b6b;
+  --accent:#c6a36a;
+  --accent-dark:#a8874f;
+}
+ 
 body{
-margin:0;
-font-family: 'Segoe UI', sans-serif;
-background:#f6f3ef;
-color:#333;
+  margin:0;
+  font-family:'Inter',sans-serif;
+  background:var(--bg-main);
+  color:var(--text-main);
+  -webkit-font-smoothing:antialiased;
 }
-header{
-padding:30px;
-text-align:center;
-background:#fff;
+
+.hero{
+  height:620px;
+  background:
+  linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.35)),
+  url('https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=1600&q=80')
+  center/cover no-repeat;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:#fff;
 }
-header h1{
-margin:0;
-font-size:34px;
-letter-spacing:1px;
+.hero h1{
+  font-family:'Playfair Display',serif;
+  font-size:60px;
+  letter-spacing:1px;
 }
+.hero p{
+  font-size:20px;
+  color:#f3f3f3;
+}
+
 .search-box{
 margin-top:15px;
 }
@@ -62,46 +85,62 @@ gap:25px;
 padding:40px;
 }
 .card{
-background:#fff;
-border-radius:18px;
-padding:15px;
-box-shadow:0 10px 30px rgba(0,0,0,0.08);
-transition:.3s;
+  background:var(--bg-card);
+  border-radius:26px;
+  padding:24px;
+  text-align:center;
+  box-shadow:0 20px 45px rgba(0,0,0,.06);
+  transition:.45s ease;
+  position:relative;
+  animation:fadeUp .8s ease forwards;
 }
-.card:hover{transform:translateY(-6px);}
+.card:hover{
+  transform:translateY(-12px);
+  box-shadow:0 35px 80px rgba(0,0,0,.12);
+}
+@keyframes fadeUp{
+  from{opacity:0;transform:translateY(40px)}
+  to{opacity:1;transform:none}
+}
+
 .img-wrap{
-overflow:hidden;
-border-radius:15px;
+  overflow:hidden;
+  border-radius:22px;
 }
+
 .img-wrap img{
-width:100%;
-transition:.4s;
+  width:100%;
+  transition:.5s ease;
 }
+
 .img-wrap:hover img{
-transform:scale(1.15);
+  transform:scale(1.08);
 }
+
 .card h3{
 font-size:16px;
 margin:12px 0;
 }
 .price{
-font-weight:bold;
-font-size:18px;
+  color:var(--accent-dark);
+  font-weight:700;
+  margin:12px 0;
+  font-size:18px;
 }
+
 .btn{
-display:block;
-text-align:center;
-margin-top:10px;
-padding:12px;
-background:#c2a878;
-color:#fff;
-border-radius:30px;
-text-decoration:none;
-font-weight:600;
+  display:inline-block;
+  margin-top:14px;
+  padding:14px 36px;
+  background:var(--text-main);
+  color:#fff;
+  text-decoration:none;
+  border-radius:40px;
+  font-weight:600;
+  transition:.35s ease;
 }
-.cart-btn{
-background:#000;
-cursor:pointer;
+.btn:hover{
+  background:var(--accent);
 }
 
 .popup{
